@@ -51,9 +51,9 @@
 
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
-   <?php
-    include("header.php")
-   ?>
+
+    @include("inc.header")
+
     <div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light" style="background-image: url('assets/img/banner/10_copy.jpg');">
         <div class="container">
             <div class="row">
@@ -128,7 +128,7 @@
 
 
 
-<?php include("footer.php") ?>
+ @include("inc.footer")
 
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

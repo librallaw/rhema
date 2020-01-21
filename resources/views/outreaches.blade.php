@@ -59,7 +59,7 @@
 
     <!-- Header 
     ============================================= -->
-    <?php include("header.php") ?>
+    @include("inc.header")
     <!-- End Header -->
 
     <!-- Start Breadcrumb 
@@ -196,7 +196,7 @@
     <!-- Start Footer 
     ============================================= -->
 
-    <?php include("footer.php") ?>
+    @include("inc.footer")
     <!-- End Footer -->
 
     <!-- jQuery Frameworks
