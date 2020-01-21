@@ -83,7 +83,9 @@ namespace App\Http\Controllers;
 
             $tranx = json_decode($response, true);
 
-            if(!$tranx->status){
+           // dd($tranx);
+
+            if(!$tranx['status']){
                 // there was an error from the API
                 print_r('API returned error: ' . $tranx['message']);
             }
@@ -94,11 +96,11 @@ namespace App\Http\Controllers;
 
 // redirect to page so User can pay
 // uncomment this line to allow the user redirect to the payment page
-       header('Location: ' . $tranx['data']['authorization_url']);
+     //  header('Location: ' . $tranx['data']['authorization_url']);
 
 
 
-           // return Redirect::route("showInstantSavings")->with("message", "Your Payment was Successfully")->with
+            return Redirect::to($tranx['data']['authorization_url']);
             //("type", 'success');
 
 

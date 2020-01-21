@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get("/sponsor","SponsorshipController@showSponsorship")->name("showSponsorship");
-Route::get("/pay","PaymentController@showSponsorship")->name("pay");
+Route::post("/pay","PaymentController@redirectToGateway")->name("pay");
+
 

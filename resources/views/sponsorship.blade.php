@@ -87,12 +87,15 @@
                         </div>
                         <div class="panel-body">
                             <form action="{{route("pay")}}" method="post">
+                                @csrf
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="cardNumber">Name</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                                <input type="text" class="form-control" id="name" placeholder="Name"
+                                                       name="name"
+                                                       required>
                                                 <span class="input-group-addon"><i class="fas fa-user"></i></span>
                                             </div>
                                         </div>
@@ -103,7 +106,8 @@
                                         <div class="form-group">
                                             <label for="cardNumber">Email</label>
                                             <div class="input-group">
-                                                <input type="email" class="form-control" id="email" placeholder="Email"
+                                                <input type="email" name="email" class="form-control" id="email"
+                                                       placeholder="Email"
                                                        required>
                                                 <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
                                             </div>
@@ -115,7 +119,8 @@
                                         <div class="form-group">
                                             <label for="cardNumber">Phone</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" id="phone" placeholder="Phone"
+                                                <input type="text" name="phone" class="form-control" id="phone"
+                                                       placeholder="Phone"
                                                        required>
                                                 <span class="input-group-addon"><i class="fas fa-phone"></i></span>
                                             </div>
@@ -129,7 +134,7 @@
                                             <label for="cardNumber">Amount</label>
                                             <div class="input-group">
                                                 <input type="number" class="form-control" id="phone"
-                                                       placeholder="Amount" required>
+                                                       placeholder="Amount" name="amount" required>
                                                 <span class="input-group-addon"><i class="fas fa-money-bill"></i></span>
                                             </div>
                                         </div>
