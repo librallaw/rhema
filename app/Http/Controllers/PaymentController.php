@@ -33,41 +33,19 @@ namespace App\Http\Controllers;
                 'amount' => 'required|integer',
             ]);
 
-
-
-// store transaction reference so we can query in case user never comes back
-// perhaps due to network issue
-
-            $new_payment = new Payment();
-            $new_payment->name =  $request->post("name");
-            $new_payment->email =  $request->post("email");
-            $new_payment->phone =  $request->post("phone");
-            $new_payment->unique_id = md5($request->post("email").time());
-            $new_payment->amount = $request->post("amount") * 100;
-            $new_payment->status = "pending";
-            $new_payment->product = "RD";
-            $new_payment->init_time = time();
-            $new_payment->date =  date('m-y',time());
-
-            $new_payment->save();
-
-
-
             $curl = curl_init();
-
-            $email = $request->post("email");
-            $amount = $request->post("amount") * 100;  //the amount in kobo. This value is actually NGN 300
 
             curl_setopt_array($curl, array(
                 CURLOPT_URL => "https://api.paystack.co/transaction/initialize",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_CUSTOMREQUEST => "POST",
                 CURLOPT_POSTFIELDS => json_encode([
-                    'amount'=>$amount,
-                    'email'=>$email,
+                    'amount'=> $request->post("amount") * 100,
+                    'email'=>$request->post("email"),
                 ]),
+
                 CURLOPT_HTTPHEADER => [
-                    "authorization: Bearer sk_test_36658e3260b1d1668b563e6d8268e46ad6da3273", //replace this with your own test key
+                    "authorization: Bearer ".getenv('PAYSTACK_SECRET_KEY'),
                     "content-type: application/json",
                     "cache-control: no-cache"
                 ],
@@ -76,35 +54,62 @@ namespace App\Http\Controllers;
             $response = curl_exec($curl);
             $err = curl_error($curl);
 
+
+
             if($err){
                 // there was an error contacting the Paystack API
+                /*  return Redirect::route("loadPayment",['id'=>$request->post('movie_id'),'slug'=>$deta->slug])->with('message',"An error occurred while trying to process your transaction, Please try again Later")->with('type','danger')->with('reference','danger');*/
+
                 die('Curl returned error: ' . $err);
             }
 
-            $tranx = json_decode($response, true);
 
-           // dd($tranx);
 
-            if(!$tranx['status']){
+            $tranx = json_decode($response);
+
+            //dd($tranx);
+
+            if(!$tranx->status){
                 // there was an error from the API
-                print_r('API returned error: ' . $tranx['message']);
+                /*  return Redirect::route("loadPayment",['id'=>$request->post('movie_id'),'slug'=>$deta->slug])->with('message',$tranx->message)->with('type','danger')->with('reference','danger');*/
+
+
+                die("error from API");
+
             }
 
-// comment out this line if you want to redirect the user to the payment page
-            //print_r($tranx);
+// store transaction reference so we can query in case user never comes back
+// perhaps due to network issue
 
+            $new_payment = new Payment();
+            $new_payment->name =  $request->post("name");
+            $new_payment->email =  $request->post("email");
+            $new_payment->phone =  $request->post("phone");
+            $new_payment->reference = $tranx->data->reference;
+            $new_payment->unique_id = md5(time());
+            $new_payment->amount = $request->post("amount") * 100;
+            $new_payment->status = "pending";
+            $new_payment->product = "RD";
+            $new_payment->init_time = time();
+            $new_payment->date =  date('m-y',time());
+
+            $new_payment->save();
+
+            //save_last_transaction_reference($tranx->data->reference);
 
 // redirect to page so User can pay
-// uncomment this line to allow the user redirect to the payment page
-     //  header('Location: ' . $tranx['data']['authorization_url']);
 
 
 
-            return Redirect::to($tranx['data']['authorization_url']);
-            //("type", 'success');
+            // echo $tranx->data->authorization_url;exit;
+
+            return Redirect::away($tranx->data->authorization_url);
 
 
+            // return \Unicodeveloper\Paystack\Facades\Paystack::getAuthorizationUrl()->redirectNow();
         }
+
+
 
         /**
          * Obtain Paystack payment information
@@ -127,7 +132,7 @@ namespace App\Http\Controllers;
             //Check if the reference exists in the database
             $reference2 = Payment::where('reference',$reference)->first();
 
-            $route = "showDashboard";
+            $route = "showSponsorship";
            // dd("I got here");
 
             if(count($reference2) < 1){
@@ -138,7 +143,7 @@ namespace App\Http\Controllers;
 
             }
 
-            $customer = User::where("unique_id",$reference2->unique_id)->first();
+           // $customer = User::where("unique_id",$reference2->unique_id)->first();
 
 
             //Check if value has already been given to the user
@@ -197,7 +202,6 @@ namespace App\Http\Controllers;
                 // dd($paymentDetails);
 
                 //Update transaction table with new details
-                $payment->trans_id = $paymentDetails->data->id;
                 $payment->amount = $paymentDetails->data->amount;
                 $payment->currency = $paymentDetails->data->currency;
                 $payment->transaction_date = $paymentDetails->data->transaction_date;
@@ -223,16 +227,7 @@ namespace App\Http\Controllers;
 
                 $payment->save();
 
-
-                $user = User::where("unique_id",$payment->unique_id)->first();
-
-                //check if user has authorization code, else update his authorization for recurrent billings
-                if(empty($user->authorization_code)){
-
-                    //dd($paymentDetails->data->authorization->authorization_code);
-                    $user ->authorization_code = $paymentDetails->data->authorization->authorization_code;
-                    $user->save();
-                }
+                //download the product
 
 
 
@@ -240,45 +235,8 @@ namespace App\Http\Controllers;
                 //check if transaction returned a true
                 if($paymentDetails->data->status =="success" && $paymentDetails->status ==true){
 
-
-                    $balance = Account::where("unique_id",$payment->unique_id)->first();
-
-                    //check if user has a balance
-                    if(!empty($balance)){
-
-                      //  dd("I have an account");
-                        $balance->balance  = $balance->balance + $paymentDetails->data->amount;
-                        $balance->save();
-                    }else{
-
-                        //dd("I have not account");
-                        //insert fresh if user does not have an account balance
-                        $balance = new Account();
-                        $balance->unique_id  = $payment->unique_id;
-                        $balance->balance  = $balance->balance + $paymentDetails->data->amount;
-                        $balance->save();
-
-                    }
+                    return Redirect::route("showSponsorship")->with("message","Your Payment was Successfully")->with("type",'success');
                 }
-
-
-                //Log in transaction history
-
-
-
-
-                $user->setup = 2;
-                $user->save();
-
-
-
-
-               
-
-                //dd($paymentDetails);
-
-
-                return Redirect::route("showDashboard")->with("message","Your Payment was Successfully")->with("type",'success');
 
 
             }else{
@@ -358,7 +316,7 @@ namespace App\Http\Controllers;
 
             $new_payment->save();
 
-            return Redirect::route("showInstantSavings")->with("message", "Your Payment was Successfully")->with("type", 'success');
+            return Redirect::route("showInstantSavings")->with("message", "Your Payment was Successfully received, Thank You for sponsoring the works of the master, may the good Lord reward your labor of love")->with("type", 'success');
 
         }
 

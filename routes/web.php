@@ -17,5 +17,6 @@ Route::get('/', function () {
 
 Route::get("/sponsor","SponsorshipController@showSponsorship")->name("showSponsorship");
 Route::post("/pay","PaymentController@redirectToGateway")->name("pay");
+Route::get('/payment/callback', 'PaymentController@handleGatewayCallback');
 
 

@@ -79,6 +79,10 @@
     <div class="donation-form default-padding">
         <div class="container">
             <div class="row">
+
+
+                @include("alert")
+
                 <div class="col-md-6 form">
                     <h2>For Sponsorship</h2>
                     <div class="panel panel-default">
