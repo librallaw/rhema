@@ -45,7 +45,7 @@ namespace App\Http\Controllers;
                 ]),
 
                 CURLOPT_HTTPHEADER => [
-                    "authorization: Bearer ".getenv('PAYSTACK_SECRET_KEY'),
+                    "authorization: Bearer ".env('PAYSTACK_SECRET_KEY'),
                     "content-type: application/json",
                     "cache-control: no-cache"
                 ],
@@ -67,7 +67,7 @@ namespace App\Http\Controllers;
 
             $tranx = json_decode($response);
 
-            dd($tranx);
+            //dd($tranx);
 
             if(!$tranx->status){
                 // there was an error from the API
