@@ -9,8 +9,11 @@
       <change beforePath="$PROJECT_DIR$/resources/views/sponsorship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sponsorship.blade.php" afterDir="false" />
 =======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
+=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" />
 >>>>>>> 75eb177de479d72dc24be8d1db6a0484d8dd4e25
+>>>>>>> cae5e1ca6e143f4e359e3ef9792b7897bc2a6924
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -124,7 +127,7 @@
       <file leaf-file-name="PaymentController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="260">
               <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
               <folding />
             </state>
@@ -508,21 +511,28 @@
       <workItem from="1579683959096" duration="614000" />
 =======
       <workItem from="1579596162878" duration="3590000" />
+<<<<<<< HEAD
+      <workItem from="1579682975610" duration="1949000" />
+=======
       <workItem from="1579682975610" duration="935000" />
 >>>>>>> 75eb177de479d72dc24be8d1db6a0484d8dd4e25
+>>>>>>> cae5e1ca6e143f4e359e3ef9792b7897bc2a6924
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+    <option name="totallyTimeSpent" value="10521000" />
+=======
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="15254000" />
 =======
     <option name="totallyTimeSpent" value="9507000" />
 >>>>>>> 75eb177de479d72dc24be8d1db6a0484d8dd4e25
+>>>>>>> cae5e1ca6e143f4e359e3ef9792b7897bc2a6924
   </component>
   <component name="ToolWindowManager">
     <frame x="87" y="42" width="1730" height="951" extended-state="0" />
-    <editor active="true" />
     <layout>
 <<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" weight="0.31543118" />
@@ -554,7 +564,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.49306357" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.49306357" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -834,7 +844,7 @@
 =======
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="260">
           <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
           <folding />
 >>>>>>> 75eb177de479d72dc24be8d1db6a0484d8dd4e25

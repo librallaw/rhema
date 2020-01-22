@@ -82,9 +82,9 @@
                         <a href="{{route("showSponsorship")}}">Sponsorship</a>
                     </li>
 
-                    <li>
-                        <a href="{{route("buy")}}">Buy Rhema</a>
-                    </li>
+                    {{--<li>--}}
+                        {{--<a href="{{route("buy")}}">Buy Rhema</a>--}}
+                    {{--</li>--}}
 
 
 

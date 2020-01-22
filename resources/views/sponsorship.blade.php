@@ -160,8 +160,15 @@
                     </div>
                 </div>
                 <div class="col-md-6 client-review text-center">
+<<<<<<< HEAD
                         <div>
                             <img src="assets/img/team/FRONT.jpg"  alt="Thumb" width="70%">
+=======
+
+                        <div>
+
+                            <img src="assets/img/front.jpg"  alt="Thumb">
+>>>>>>> e472a8891653ae9ee4076c0bd250046cfef1c8f6
 
                         </div>
                 </div>
