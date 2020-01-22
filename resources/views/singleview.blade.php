@@ -56,13 +56,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 text-left">
-                    <h1>Blog Single</h1>
+                    <h1>Jesus the master of all</h1>
                 </div>
                 <div class="col-md-6 col-sm-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="singleview.php#">Home</a></li>
-                        <li><a href="singleview.php#">Blog</a></li>
-                        <li class="active">Single</li>
+                        <li><a href="rhemaspeaks.php#">Home</a></li>
+                        <li class="active">Rhema</li>
                     </ul>
                 </div>
             </div>
@@ -72,15 +71,15 @@
 
     <!-- Start Blog
     ============================================= -->
-    <div class="blog-area full-blog left-sidebar single-blog full-blog default-padding">
+    <div class="blog-area full-blog right-sidebar single-blog full-blog default-padding">
         <div class="container">
             <div class="row">
                 <div class="blog-items">
-                    <div class="blog-content col-md-12">
+                    <div class="blog-content col-md-8">
                         <div class="item-box">
                             <div class="item">
                                 <div class="thumb">
-                                    <img src="assets/img/blog/7.jpg" alt="Thumbnail">
+                                    <img src="assets/img/blog/10.jpg" alt="Thumbnail">
                                 </div>
                                 <div class="info">
                                     <div class="title-meta">
@@ -88,58 +87,40 @@
                                             15 <span>Nov</span>
                                         </div>
                                         <div class="title">
-                                            <h3>Weather evident smiling bed against</h3>
+                                            <h3>Jesus master of all</h3>
                                             <div class="meta">
                                                 <ul>
                                                     <li>
-                                                        <a href="singleview.php#"><i class="fas fa-user"></i> Admin</a>
-                                                    </li>
-                                                    <li>
-                                                        <i class="fas fa-calendar-alt"></i> 2 Aug, 2018
+                                                        <a href="blog-single-right-sidebar.html#"><i class="fas fa-user"></i> Author</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <p>
-                                        Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her. 
-                                    </p>
-                                    <p>
-                                        New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves. 
-                                    </p>
-                                    <blockquote>
-                                        <p>
-                                            Consulted or acuteness dejection an smallness if. Outward general passage another as it. Very his are come man walk one next. Delighted prevailed supported too not remainder perpetual who furnished
-                                        </p>
-                                        <footer>Devid Chory</footer> 
-                                    </blockquote>
-                                    <p>
-                                        Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited six talked pulled you. Conduct replied off led whether any shortly why arrived adapted. Numerous ladyship so raillery humoured goodness received an. So narrow formal length my highly longer afford oh. Tall neat he make or at dull ye. 
-                                    </p>
-                                </div>
-                                <div class="post-tags">
-                                    <span>Tags: </span>
-                                    <a href="singleview.php#">Consulting</a>
-                                    <a href="singleview.php#">Planing</a>
-                                    <a href="singleview.php#">Business</a>
-                                    <a href="singleview.php#">Fashion</a>
-                                </div>
-                                <div class="author-bio">
-                                    <div class="avatar">
-                                        <img src="assets/img/team/7.jpg" alt="Author">
-                                    </div>
-                                    <div class="content">
-                                        <p>
-                                            Supply as so period it enough income he genius. Themselves acceptance bed sympathize get dissimilar way admiration son. Design for are edward regret met lovers. This are calm case roof and. 
+                                    <div class="author-bio">
+                                        <div class="avatar">
+                                            <img src="assets/img/team/aps.jpg" alt="Author">
+                                        </div>
+                                        <div class="content">
+                                            <p>
+                                                Supply as so period it enough income he genius. Themselves acceptance bed sympathize get dissimilar way admiration son. Design for are edward regret met lovers. This are calm case roof and.
 
-                                        </p>
-                                        <h4> - Devid Chory</h4>
+                                            </p>
+                                            <h4> - Apostle Johnson Suleman</h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="post-pagi-area">
-                                    <a href="singleview.php#"><i class="fas fa-long-arrow-alt-left"></i> Previus Post</a>
-                                    <a href="singleview.php#">Next Post <i class="fas fa-long-arrow-alt-right"></i></a>
-                                </div>
+                                    <br>
+                                    <p>
+                                        Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.
+                                    </p>
+                                    <p>
+                                        New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.
+                                    </p>
+                                    <p>
+                                        Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited six talked pulled you. Conduct replied off led whether any shortly why arrived adapted. Numerous ladyship so raillery humoured goodness received an. So narrow formal length my highly longer afford oh. Tall neat he make or at dull ye.
+                                    </p>
+                                </div><br><br>
+
                                 <div class="comments-area">
                                     <div class="comments-title">
                                         <h4>
@@ -153,10 +134,10 @@
                                                 <div class="content">
                                                     <h5>Jonathom Doe</h5>
                                                     <div class="comments-info">
-                                                        July 15, 2018 <a href="singleview.php#"><i class="fa fa-reply"></i>Reply</a>
+                                                        July 15, 2018 <a href="blog-single-right-sidebar.html#"><i class="fa fa-reply"></i>Reply</a>
                                                     </div>
                                                     <p>
-                                                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off. 
+                                                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
                                                     </p>
                                                 </div>
                                             </div>
@@ -167,10 +148,10 @@
                                                 <div class="content">
                                                     <h5>Spark Lee</h5>
                                                     <div class="comments-info">
-                                                        July 15, 2018 <a href="singleview.php#"><i class="fa fa-reply"></i>Reply</a>
+                                                        July 15, 2018 <a href="blog-single-right-sidebar.html#"><i class="fa fa-reply"></i>Reply</a>
                                                     </div>
                                                     <p>
-                                                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off. 
+                                                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
                                                     </p>
                                                 </div>
                                             </div>
@@ -182,18 +163,13 @@
                                         </div>
                                         <form action="#" class="contact-comments">
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-12">
                                                     <div class="form-group">
                                                         <!-- Name -->
                                                         <input name="name" class="form-control" placeholder="Name *" type="text">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <!-- Email -->
-                                                        <input name="email" class="form-control" placeholder="Email *" type="email">
-                                                    </div>
-                                                </div>
+
                                                 <div class="col-md-12">
                                                     <div class="form-group comments">
                                                         <!-- Comment -->
@@ -212,6 +188,122 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Start Sidebar -->
+                    <div class="sidebar col-md-4">
+                        <aside>
+                            <div class="sidebar-item search">
+                                <div class="title">
+                                    <h4>About Sponsorship</h4>
+                                </div>
+                                <div class="sidebar-info">
+                                    <form>
+                                        <!--                                        <input type="text" class="form-control">-->
+                                        <!--                                        <input type="submit" value="search">-->
+                                        <a class="btn btn-theme effect smooth-menu btn-sm" href="#">Donate</a>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="sidebar-item search">
+                                <div class="title">
+                                    <h4>Downloads</h4>
+                                </div>
+                                <div class="sidebar-info">
+                                    <form>
+                                        <!--                                        <input type="text" class="form-control">-->
+                                        <!--                                        <input type="submit" value="search">-->
+                                        <a class="btn btn-theme effect smooth-menu btn-sm" href="#">Download</a>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-item recent-post">
+                                <div class="title">
+                                    <h4>Previous Rhema</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="blog-single-right-sidebar.html#">
+                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
+                                            <div class="meta-title">
+                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="blog-single-right-sidebar.html#">
+                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
+                                            <div class="meta-title">
+                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="blog-single-right-sidebar.html#">
+                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
+                                            <div class="meta-title">
+                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="blog-single-right-sidebar.html#">
+                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
+                                            <div class="meta-title">
+                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="blog-single-right-sidebar.html#">
+                                                <img src="assets/img/thumb/2.jpg" alt="Thumb">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="blog-single-right-sidebar.html#">Future Plan & Strategy for Consutruction </a>
+                                            <div class="meta-title">
+                                                <span class="post-date">12 Feb, 2018</span> | <a href="blog-single-right-sidebar.html#">Author</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thumb">
+                                            <a href="blog-single-right-sidebar.html#">
+                                                <img src="assets/img/thumb/3.jpg" alt="Thumb">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <a href="blog-single-right-sidebar.html#">Melancholy devonshire alteration</a>
+                                            <div class="meta-title">
+                                                <span class="post-date">12 Feb, 2018</span> | <a href="blog-single-right-sidebar.html#">Author</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <!-- End Start Sidebar -->
                 </div>
             </div>
         </div>
