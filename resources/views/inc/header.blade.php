@@ -63,30 +63,34 @@
                 <ul class="nav navbar-nav navbar-left" data-in="#" data-out="#">
 
                     <li class="active">
-                        <a href="index.php">Home</a>
+                        <a href="{{ route('home') }}">Home</a>
                     </li>
 
                     <li>
-                        <a href="about.php">About us</a>
+                        <a href="{{ route('about') }}">About us</a>
                     </li>
 
                     <li>
-                        <a href="outreaches.php">Outreaches</a>
+                        <a href="{{ route('outreaches') }}">Outreaches</a>
                     </li>
 
                     <li>
-                        <a href="rhemaspeaks.php">Rhema Speaks</a>
+                        <a href="{{ route('single') }}">Rhema Speaks</a>
                     </li>
 
                     <li>
                         <a href="{{route("showSponsorship")}}">Sponsorship</a>
                     </li>
 
+                    <li>
+                        <a href="{{route("buy")}}">Buy Rhema</a>
+                    </li>
+
 
 
 
                     <li>
-                        <a href="contact.php">contact</a>
+                        <a href="{{ route('contact') }}">contact</a>
                     </li>
                 </ul>
             </div>
