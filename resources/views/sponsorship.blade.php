@@ -161,7 +161,6 @@
                 </div>
                 <div class="col-md-6 client-review text-center">
                         <div>
-
                             <img src="assets/img/team/FRONT.jpg"  alt="Thumb" width="70%">
 
                         </div>
