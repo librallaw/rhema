@@ -121,10 +121,9 @@
                 </div>
             </div>
             <div class="col-md-6 client-review text-center">
-                <h2>Our Supporter</h2>
                 <div>
 
-                    <img src="assets/img/team/front.jpg"  alt="Thumb" width="70%">
+                    <img src="assets/img/team/FRONT.jpg"  class="img-responsive" alt="Thumb">
 
                 </div>
             </div>

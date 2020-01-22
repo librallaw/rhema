@@ -59,7 +59,7 @@
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light" style="background-image: url('assets/img/banner/25.jpg');">
+    <div class="breadcrumb-area shadow dark bg-fixed text-center padding-xl text-light" style="background-image:url('assets/img/banner/25.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 text-left">
@@ -160,10 +160,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 client-review text-center">
-                    <h2>Our Supporter</h2>
                         <div>
 
-                            <img src="assets/img/team/front.jpg"  alt="Thumb" width="70%">
+                            <img src="assets/img/team/FRONT.jpg"  alt="Thumb" width="70%">
 
                         </div>
                 </div>
