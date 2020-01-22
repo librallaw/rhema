@@ -67,7 +67,7 @@ namespace App\Http\Controllers;
 
             $tranx = json_decode($response);
 
-            dd($tranx);
+           // dd($tranx);
 
             if(!$tranx->status){
                 // there was an error from the API
