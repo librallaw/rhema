@@ -161,22 +161,11 @@
                 </div>
                 <div class="col-md-6 client-review text-center">
                     <h2>Our Supporter</h2>
-                    <div class="testimonial-items owl-carousel owl-theme">
-                        <div class="item">
-                            <p style="text-align: justify">Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret.
-                                Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably.
-                                Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters.<br>
-                                Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.
-                                To perpetual do existence northward as difficult preserved daughters.<br>
-                                Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.
-                                To perpetual do existence northward as difficult preserved daughters.<br>
-                                Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.
-                            </p>
-<!--                            <img src="assets/img/team/7.jpg" alt="Thumb">-->
-<!--                            <h4>Bubly Spark</h4>-->
-<!--                            <span>Supporter from USA</span>-->
+                        <div>
+
+                            <img src="assets/img/team/front.jpg"  alt="Thumb" width="70%">
+
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
