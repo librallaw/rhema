@@ -135,15 +135,21 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="cardNumber">Amount</label>
-                                            <div class="input-group">
-                                                <input type="number" class="form-control" id="phone"
-                                                       placeholder="Amount" name="amount" required>
-                                                <span class="input-group-addon"><i class="fas fa-money-bill"></i></span>
-                                            </div>
+                                            <label for="cardNumber">Sponsorship Category</label>
+
+                                                <select  type="radio" class="form-control" id="phone"  placeholder="Amount" name="amount" required>
+                                                    <option value="1000000">Platinum Partner: –    1000 copies and above</option>
+                                                    <option value="100000">Diamond Partner: -       600 – 999 copies</option>
+                                                    <option value="10000">Gold Partner      : -         300 – 500 copies</option>
+                                                    <option value="1000">Silver Partner      : -        100 – 299 copies</option>
+                                                    <option value="100">Bronze Partner   : -            5 –   99 copies</option>
+                                                </select>
+
                                         </div>
                                     </div>
                                 </div>
+
+
 
 
                                 <div class="row">
