@@ -77,13 +77,70 @@
     <div class="our-mission default-padding">
         <div class="container">
             <div class="row">
-                <div class="site-heading text-center">
+                <div class="site-heading ">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2>Our Vision</h2>
+                        {{--<h2>Our Vision</h2>--}}
                         <p>
-                            God gave a mandate to his servant, Apostle Johnson Suleman: “Wipe out tears and restore men back to their destinies; through the revelation of the Word, the manifestation of Power and the reality of the Holy Spirit.” <br/>
+                            Rhema for Living devotional is an exceptional book; filled with words of transformation, upliftment, deliverance and prophetic fulfilment. It is God’s daily thoughts of love expressed to you, in a concise and an ever refreshing manner.
+                            As we say in Omega Fire Ministries, “Rhema for Living is that specific Word of God, spoken to a specific person at a specific time for a specific purpose, at a specific place for a specific miracle.
+                            <br/>
+                            <br/>
+                            Which means, every time you hold a copy of this devotional, God has a specific word, for your specific challenge for that specific day.
 
-                            This divine mandate is the drive behind the invasion of several nations across the globe with the gospel of Jesus Christ. But, with the passion and ever-increasing burden for the lost and the oppressed, the need for media technology ecame inevitable <br/> <br/>
+
+
+
+                        </p>
+
+
+
+                        <section class="about-area cell-items">
+                            <div class="container-full">
+                                <div class="row">
+
+                                    <div class="col-md-6 info">
+                                        <h3>The four (4) major blessings that you will receive from using this insightful devotional, called “Rhema for Living” are;</h3>
+
+                                        <div class="joining-way">
+                                            <div class="item" style="padding:0px;">
+
+                                                <div class="content">
+                                                    <h4>A Deeper Understanding Of The Word Of God</h4>
+                                                </div>
+                                            </div>
+                                            <div class="item" style="padding:0px;">
+
+
+
+                                                <div class="content">
+                                                    <h4>Destiny Changing Prayers</h4>
+
+                                                </div>
+                                            </div>
+                                            <div class="item" style="padding:0px;">
+
+                                                <div class="content">
+                                                    <h4>Present Hour Manifestations, Testimonies And Miracle</h4>
+
+
+                                                </div>
+                                            </div><div class="item" style="padding:0px;">
+
+                                                <div class="content">
+                                                    <h4>The Discipline of Reading Through the Whole Bible in a Year</h4>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <p>
+                            Rhema for Living devotional is an excellent tool of evangelism, for it helps to break communication barriers and bring help the way of people. As a church, fellowship group in personal outreach campaigns, it is an arsenal of Spiritual nuggets,
+
 
 
 
@@ -91,37 +148,10 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="row">
-                <div class="col-md-12">
-                    <div class="mission-items owl-carousel owl-theme text-center">
-                        <div class="item">
-                            <i class="flaticon-donation"></i>
-                            <h4>Teaching the Word</h4>
-                            <p>
-                                As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.
-                            </p>
 
-                        </div>
-                        <div class="item">
-                            <i class="flaticon-house"></i>
-                            <h4>Destiny Changing Prayers</h4>
-                            <p>
-                                As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.
-                            </p>
-
-                        </div>
-
-                        <div class="item">
-                            <i class="flaticon-dove"></i>
-                            <h4>Present hour Manisfestation</h4>
-                            <p>
-                                As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.
-                            </p>
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>
