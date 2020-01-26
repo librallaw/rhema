@@ -11,4 +11,10 @@ class SingleController extends Controller
         return view('singleview');
 
     }
+
+    public function rhemaspeaks(){
+
+        return view('speaks');
+
+    }
 }

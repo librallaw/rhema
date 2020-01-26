@@ -25,6 +25,8 @@ Route::get('about', 'AboutController@about')->name('about');
 //Outreaches Route
 Route::get('outreach', 'OutreachController@outreach')->name('outreaches');
 
+Route::get('rhemaspeaks', 'SingleController@rhemaspeaks')->name('rhemaspeaks');
+
 //RhemaSpeaks Route
 Route::get('single', 'SingleController@single')->name('single');
 

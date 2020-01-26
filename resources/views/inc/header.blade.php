@@ -75,7 +75,7 @@
                     </li>
 
                     <li>
-                        <a href="{{ route('single') }}">Rhema Speaks</a>
+                        <a href="{{ route('rhemaspeaks') }}">Rhema Speaks</a>
                     </li>
 
                     <li>
