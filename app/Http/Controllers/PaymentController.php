@@ -30,7 +30,7 @@ namespace App\Http\Controllers;
         {
 
             $validatedData = $request->validate([
-                'email' => 'required|integer',
+                'email' => 'required',
             ]);
 
             $curl = curl_init();

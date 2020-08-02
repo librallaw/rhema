@@ -78,47 +78,43 @@
                     <div class="blog-content col-md-8">
                         <div class="item-box">
                             <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/blog/10.jpg" alt="Thumbnail">
-                                </div>
-                                <div class="info">
+
+                                <p class="info">
                                     <div class="title-meta">
                                         <div class="date">
-                                            15 <span>Nov</span>
+                                            SATURDAY 1ST, <span> AUGUST 2020</span>
                                         </div>
                                         <div class="title">
-                                            <h3>Jesus master of all</h3>
-                                            <div class="meta">
-                                                <ul>
-                                                    <li>
-                                                        <a href="blog-single-right-sidebar.html#"><i class="fas fa-user"></i> Author</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            <h3>GROWING IN THE SPIRIT.</h3>
                                         </div>
                                     </div>
                                     <div class="author-bio">
-                                        <div class="avatar">
-                                            <img src="assets/img/team/aps.jpg" alt="Author">
-                                        </div>
+
                                         <div class="content">
                                             <p>
-                                                Supply as so period it enough income he genius. Themselves acceptance bed sympathize get dissimilar way admiration son. Design for are edward regret met lovers. This are calm case roof and.
+                                                And the child grew, and waxed strong in spirit, filled with wisdom: and the grace of God was upon him."
 
                                             </p>
-                                            <h4> - Apostle Johnson Suleman</h4>
+                                            <h4> - Luke 2 :40</h4>
                                         </div>
                                     </div>
                                     <br>
-                                    <p>
-                                        Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.
-                                    </p>
-                                    <p>
-                                        New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.
-                                    </p>
-                                    <p>
-                                        Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited six talked pulled you. Conduct replied off led whether any shortly why arrived adapted. Numerous ladyship so raillery humoured goodness received an. So narrow formal length my highly longer afford oh. Tall neat he make or at dull ye.
-                                    </p>
+                                    TEXT: "And the child grew, and waxed strong in spirit, filled with wisdom: and the grace of God was upon him." Luke 2 :40.
+
+                                <p>Everyone in the kingdom wishes to grow in the spirit but in action, not all really will, because growing in the spirit is highly impossible without self-discipline.<br />
+                                    To grow in the spirit, you must of necessity discipline the flesh, denying it of its pleasures and exercising yourself in the things of the spirit. No one can discipline you for you, as much as you would.</p>
+
+                                <p>
+                                    It takes a deliberate self-effort of discipline springing from a personal desire to truly grow in the spirit, that is why a three days compulsory fast, imposed on someone could yield lesser result in him, than a one day fast consciously engaged in with a burning desire to know God.
+                                </p>
+
+                                    The things of the spirit opens-up to whoever thirst and longs for them, and willing to discipline oneself in doing what it takes. The scripture says, "Blessed are they which do hunger and thirst after righteousness: for they shall be filled." Matt. 5 :6.<br />
+
+
+                                    The psalmist says in Psalms 63 :1 - 2, "O God, thou art my God; early will I seek thee: my soul thirsteth for thee, my flesh longeth for thee in a dry and thirsty land, where no water is; To see thy power and thy glory, so as I have seen thee in the sanctuary."
+
+                                   <p> Exercising yourself consistently in the things of the spirit requires discipline. You must be ready to deny yourself bodily pleasures to grow thereby.
+                                    You must give yourself to it by putting measures in place that will help you. When your willingness is established, His grace is sufficiently released.,</p>
                                 </div><br><br>
 
                                 <div class="comments-area">
@@ -157,13 +153,11 @@
                                         </h4>
                                         <div class="comments-list">
                                             <div class="commen-item">
-                                                <div class="avatar">
-                                                    <img src="assets/img/team/8.jpg" alt="Author">
-                                                </div>
+
                                                 <div class="content">
-                                                    <h5>Jonathom Doe</h5>
+                                                    <h5>Zinani Chuks</h5>
                                                     <div class="comments-info">
-                                                        July 15, 2018
+                                                        July 2, 2020
                                                     </div>
                                                     <p>
                                                         Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
@@ -199,6 +193,17 @@
                                         <!--                                        <input type="submit" value="search">-->
                                         <a class="btn btn-theme effect smooth-menu btn-sm" href="#">Buy</a>
                                     </form>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-item search">
+
+                                <div class="sidebar-info"> <div>
+
+                                        <img src="assets/img/front.jpg"  alt="Thumb">
+
+
+                                    </div>
                                 </div>
                             </div>
 
