@@ -26,12 +26,13 @@ Route::get('about', 'AboutController@about')->name('about');
 Route::get('outreach', 'OutreachController@outreach')->name('outreaches');
 
 //RhemaSpeaks Route
-Route::get('single', 'SingleController@single')->name('single');
+Route::get('rhema-speaks', 'SingleController@single')->name('single');
 
 //Buy Rhema Route
 Route::get('buy', 'BuyController@buy')->name('buy');
 
 //Contact Route
 Route::get('contact', 'ContactController@contact')->name('contact');
+Route::post('contact', 'ContactController@addContact')->name('addContact');
 
 

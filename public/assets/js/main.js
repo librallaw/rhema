@@ -520,7 +520,12 @@
                             $('.contact-form img.loader').fadeOut('slow', function() {
                                 $(this).remove()
                             });
+                            $('#name').val("");
+                            $('#email').val("");
+                            $('#phone').val("");
+                            $('#comments').val("");
                             $('#submit').removeAttr('disabled');
+
                         }
                     );
                 });

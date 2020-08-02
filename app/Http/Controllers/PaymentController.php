@@ -30,7 +30,7 @@ namespace App\Http\Controllers;
         {
 
             $validatedData = $request->validate([
-                'amount' => 'required|integer',
+                'email' => 'required|integer',
             ]);
 
             $curl = curl_init();
@@ -40,7 +40,7 @@ namespace App\Http\Controllers;
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_CUSTOMREQUEST => "POST",
                 CURLOPT_POSTFIELDS => json_encode([
-                    'amount'=> $request->post("amount") * 100,
+                    'amount'=> 10000,
                     'email'=>$request->post("email"),
                 ]),
 
@@ -87,7 +87,7 @@ namespace App\Http\Controllers;
             $new_payment->phone =  $request->post("phone");
             $new_payment->reference = $tranx->data->reference;
             $new_payment->unique_id = md5(time());
-            $new_payment->amount = $request->post("amount") * 100;
+            $new_payment->amount = 10000;
             $new_payment->status = "pending";
             $new_payment->product = "RD";
             $new_payment->init_time = time();
@@ -135,7 +135,7 @@ namespace App\Http\Controllers;
             $route = "showSponsorship";
            // dd("I got here");
 
-            if(count($reference2) < 1){
+            if(empty($reference2)){
              return Redirect::route($route)->with("message",'Invalid transaction')->with("type",'danger');
                // exit;
 
@@ -235,7 +235,11 @@ namespace App\Http\Controllers;
                 //check if transaction returned a true
                 if($paymentDetails->data->status =="success" && $paymentDetails->status ==true){
 
+
+
                     return Redirect::route("showSponsorship")->with("message","Your Payment was Successfully")->with("type",'success');
+
+
                 }
 
 

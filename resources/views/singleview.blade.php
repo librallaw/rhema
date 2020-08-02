@@ -9,7 +9,7 @@
     <meta name="description" content="Charities - Charity & Nonprofit Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Charities - Charity & Nonprofit Template</title>
+    <title>Rhema Speaks - Rhema for living</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -56,12 +56,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 text-left">
-                    <h1>Jesus the master of all</h1>
+                    <h1>Rhema for Today</h1>
                 </div>
                 <div class="col-md-6 col-sm-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="rhemaspeaks.php#">Home</a></li>
-                        <li class="active">Rhema</li>
+                        <li><a href="/">Home</a></li>
+                        <li class="active">{{date("D jS M, Y ")}}</li>
                     </ul>
                 </div>
             </div>
@@ -122,41 +122,6 @@
                                 </div><br><br>
 
                                 <div class="comments-area">
-                                    <div class="comments-title">
-                                        <h4>
-                                            5 comments
-                                        </h4>
-                                        <div class="comments-list">
-                                            <div class="commen-item">
-                                                <div class="avatar">
-                                                    <img src="assets/img/team/8.jpg" alt="Author">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Jonathom Doe</h5>
-                                                    <div class="comments-info">
-                                                        July 15, 2018 <a href="blog-single-right-sidebar.html#"><i class="fa fa-reply"></i>Reply</a>
-                                                    </div>
-                                                    <p>
-                                                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="commen-item reply">
-                                                <div class="avatar">
-                                                    <img src="assets/img/team/9.jpg" alt="Author">
-                                                </div>
-                                                <div class="content">
-                                                    <h5>Spark Lee</h5>
-                                                    <div class="comments-info">
-                                                        July 15, 2018 <a href="blog-single-right-sidebar.html#"><i class="fa fa-reply"></i>Reply</a>
-                                                    </div>
-                                                    <p>
-                                                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="comments-form">
                                         <div class="title">
                                             <h4>Leave a comments</h4>
@@ -177,13 +142,38 @@
                                                     </div>
                                                     <div class="form-group full-width submit">
                                                         <button type="submit">
-                                                            Post Comments
+                                                            Post Comment
                                                         </button>
+
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
+                                    <br />
+                                    <div class="comments-title">
+                                        <h4>
+                                            5 comments
+                                        </h4>
+                                        <div class="comments-list">
+                                            <div class="commen-item">
+                                                <div class="avatar">
+                                                    <img src="assets/img/team/8.jpg" alt="Author">
+                                                </div>
+                                                <div class="content">
+                                                    <h5>Jonathom Doe</h5>
+                                                    <div class="comments-info">
+                                                        July 15, 2018
+                                                    </div>
+                                                    <p>
+                                                        Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -192,115 +182,27 @@
                     <div class="sidebar col-md-4">
                         <aside>
                             <div class="sidebar-item search">
-                                <div class="title">
-                                    <h4>About Sponsorship</h4>
-                                </div>
+
                                 <div class="sidebar-info">
                                     <form>
                                         <!--                                        <input type="text" class="form-control">-->
                                         <!--                                        <input type="submit" value="search">-->
-                                        <a class="btn btn-theme effect smooth-menu btn-sm" href="#">Donate</a>
+                                        <a class="btn btn-theme effect smooth-menu btn-sm" href="#">Partner with Us</a>
                                     </form>
                                 </div>
                             </div>
                             <div class="sidebar-item search">
-                                <div class="title">
-                                    <h4>Downloads</h4>
-                                </div>
+
                                 <div class="sidebar-info">
                                     <form>
                                         <!--                                        <input type="text" class="form-control">-->
                                         <!--                                        <input type="submit" value="search">-->
-                                        <a class="btn btn-theme effect smooth-menu btn-sm" href="#">Download</a>
+                                        <a class="btn btn-theme effect smooth-menu btn-sm" href="#">Buy</a>
                                     </form>
                                 </div>
                             </div>
 
-                            <div class="sidebar-item recent-post">
-                                <div class="title">
-                                    <h4>Previous Rhema</h4>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="blog-single-right-sidebar.html#">
-                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
-                                            <div class="meta-title">
-                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="blog-single-right-sidebar.html#">
-                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
-                                            <div class="meta-title">
-                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="blog-single-right-sidebar.html#">
-                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
-                                            <div class="meta-title">
-                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="blog-single-right-sidebar.html#">
-                                                <img src="assets/img/thumb/1.jpg" alt="Thumb">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <a href="blog-single-right-sidebar.html#">Delicate contempt received two yet advanced</a>
-                                            <div class="meta-title">
-                                                <span class="post-date">12 Feb, 2018</span> |  <a href="blog-single-right-sidebar.html#">Author</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="blog-single-right-sidebar.html#">
-                                                <img src="assets/img/thumb/2.jpg" alt="Thumb">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <a href="blog-single-right-sidebar.html#">Future Plan & Strategy for Consutruction </a>
-                                            <div class="meta-title">
-                                                <span class="post-date">12 Feb, 2018</span> | <a href="blog-single-right-sidebar.html#">Author</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="blog-single-right-sidebar.html#">
-                                                <img src="assets/img/thumb/3.jpg" alt="Thumb">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <a href="blog-single-right-sidebar.html#">Melancholy devonshire alteration</a>
-                                            <div class="meta-title">
-                                                <span class="post-date">12 Feb, 2018</span> | <a href="blog-single-right-sidebar.html#">Author</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+
                         </aside>
                     </div>
                     <!-- End Start Sidebar -->

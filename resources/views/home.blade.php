@@ -6,16 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="infoription" content="Church - Religion & Destiny ">
-
-
-
     <meta property="og:description" id="metdesc111" content="
 	Experience God's Wisdom each day as you are lead by the Holy Spirit. Walk effortlessly into success and happiness and understand the Father's love for you
 " />
     <meta property="og:title" id="mettitle111" content="Welcome - Rhema For Life Daily Deveotional
     Video" />
     <meta property="og:image" id="metimage111" content="/assets/img/back.jpeg" />
+
+    <!-- ========== Page Title ========== -->
+    <title>Home - Rhema for Living</title>
 
     <!-- ========== Page Title ========== -->
     <title>Home - Rhema for Living</title>

@@ -137,8 +137,8 @@
                                         <div class="form-group">
                                             <label for="cardNumber">Amount</label>
                                             <div class="input-group">
-                                                <input type="number" class="form-control" id="phone"
-                                                       placeholder="Amount" name="amount" required>
+                                                <input type="text" class="form-control" id="phone"
+                                                        value="#1000" disabled>
                                                 <span class="input-group-addon"><i class="fas fa-money-bill"></i></span>
                                             </div>
                                         </div>
@@ -160,15 +160,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 client-review text-center">
-<<<<<<< HEAD
-                        <div>
-                            <img src="assets/img/team/FRONT.jpg"  alt="Thumb" width="70%">
-=======
+
+
 
                         <div>
 
                             <img src="assets/img/front.jpg"  alt="Thumb">
->>>>>>> e472a8891653ae9ee4076c0bd250046cfef1c8f6
+
 
                         </div>
                 </div>
