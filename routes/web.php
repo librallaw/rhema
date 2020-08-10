@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home2');
 })->name('home');
 
 Route::get("/sponsor","SponsorshipController@showSponsorship")->name("showSponsorship");
