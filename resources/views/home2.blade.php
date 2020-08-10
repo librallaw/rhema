@@ -230,7 +230,7 @@
                                 <div class="col-12">
                                     <div class="intro_layers_wrapper">
                                         <div class="img-layer animate" data-animation="fadeInLeft">
-                                            <img src="images/front.png" alt="img">
+                                            <img src="images/front4.png" alt="img">
                                         </div>
                                         <div class="intro_layers">
 
@@ -266,9 +266,9 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="divider-xl-200"></div>
-                        <p class="mb-2 color-dark">Meet author</p>
+                        <p class="mb-2 color-dark">Meet the Authors</p>
                         <h2 class="special-heading">
-                            <span>Apostle Johnson Suleman</span>
+                            <span>Apostle (Prof.) Johnson & Dr. Lizzy Suleman</span>
                         </h2>
                         <div class="divider-40"></div>
                         <p class="excerpt">
@@ -294,8 +294,8 @@
                 <div class="row align-center">
                     <div class="col-lg-6">
                         <div class="video-shortcode">
-                            <img src="images/front.png" alt="img">
-                            <a href="#" class="photoswipe-link photoswipe-link-button" data-iframe="https://www.youtube.com/embed/YncSOWJ-kRs" data-index="1"></a>
+                            <img src="images/front3.jpg" alt="img">
+                            <a href="#" class="photoswipe-link "  data-index="1"></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
