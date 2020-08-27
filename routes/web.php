@@ -23,6 +23,10 @@ Route::get("/sponsor","SponsorshipController@showSponsorship")->name("showSponso
 Route::post("/pay","PaymentController@redirectToGateway")->name("pay");
 Route::get('/payment/callback', 'PaymentController@handleGatewayCallback');
 
+
+Route::post('/sponsor', 'PaymentController@redirectToGatewaySponsor');
+
+
 //About Route
 Route::get('about', 'AboutController@about')->name('about');
 Route::get('author', 'AboutController@author')->name('author');
@@ -39,6 +43,7 @@ Route::get('rhema-speakss', 'SingleController@single')->name('single');
 
 //Buy Rhema Route
 Route::get('buy', 'BuyController@buy')->name('buy');
+Route::get('sponsor', 'BuyController@buy')->name('buy');
 
 //Contact Route
 Route::get('contact', 'ContactController@contact')->name('contact');

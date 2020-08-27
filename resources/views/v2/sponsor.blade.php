@@ -186,7 +186,7 @@
 
                                 <div class="divider-50 divider-xl-70"></div>
                                 <div class="ls ms p-40 p-lg-50 border-r-def">
-                                    <form class="contact-form c-mb-50" action="/">
+                                    <form class="contact-form c-mb-50" action="{{route("redirectToGatewaySponsor")}}" method="post">
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group has-placeholder">
@@ -205,7 +205,7 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group has-placeholder">
-                                                    <input type="text" aria-required="true" size="30" value="" name="email" class="form-control" placeholder="Address">
+                                                    <input type="text" aria-required="true" size="30" value="" name="address" class="form-control" placeholder="Address">
                                                 </div>
                                             </div>
                                         </div>
@@ -215,7 +215,7 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group has-placeholder">
-                                                    <input type="text" aria-required="true" size="30" value="" name="email" class="form-control" placeholder="Phone">
+                                                    <input type="text" aria-required="true" size="30" value="" name="phone" class="form-control" placeholder="Phone">
                                                 </div>
                                             </div>
                                         </div>
@@ -224,7 +224,7 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group has-placeholder">
-                                                    <input type="text" aria-required="true" size="30" value="" name="email" class="form-control" placeholder="City">
+                                                    <input type="text" aria-required="true" size="30" value="" name="city" class="form-control" placeholder="City">
                                                 </div>
                                             </div>
                                         </div>
@@ -233,7 +233,7 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group has-placeholder">
-                                                    <input type="text" aria-required="true" size="30" value="" name="email" class="form-control" placeholder="State">
+                                                    <input type="text" aria-required="true" size="30" value="" name="state" class="form-control" placeholder="State">
                                                 </div>
                                             </div>
                                         </div>
@@ -242,7 +242,7 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="form-group has-placeholder">
-                                                    <input type="text" aria-required="true" size="30" value="" name="email" class="form-control" placeholder="Country">
+                                                    <input type="text" aria-required="true" size="30" value="" name="country" class="form-control" placeholder="Country">
                                                 </div>
                                             </div>
                                         </div>
