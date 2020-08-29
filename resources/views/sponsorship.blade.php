@@ -135,6 +135,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
+<<<<<<< HEAD
                                             <label for="cardNumber">Sponsorship Category</label>
 
                                                 <select  type="radio" class="form-control" id="phone"  placeholder="Amount" name="amount" required>
@@ -145,6 +146,14 @@
                                                     <option value="100">Bronze Partner   : -            5 –   99 copies</option>
                                                 </select>
 
+=======
+                                            <label for="cardNumber">Amount</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="phone"
+                                                        value="#1000" disabled>
+                                                <span class="input-group-addon"><i class="fas fa-money-bill"></i></span>
+                                            </div>
+>>>>>>> refs/remotes/origin/master
                                         </div>
                                     </div>
                                 </div>
@@ -167,6 +176,10 @@
                 </div>
                 <div class="col-md-6 client-review text-center">
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/master
 
                         <div>
 

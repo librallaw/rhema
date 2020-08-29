@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="topbar-button text-right col-md-3">
-                <a href="{{route("showSponsorship")}}" class="btn btn-theme circle effect standard btn-sm" style="background:#bc0002">Sponsor
+                <a href="{{route("showSponsorship")}}" class="btn btn-theme  btn-sm" style="background:#bc0002">Buy
                     Now</a>
             </div>
         </div>
@@ -79,7 +79,7 @@
                     </li>
 
                     <li>
-                        <a href="{{route("showSponsorship")}}">Sponsorship</a>
+                        <a href="{{route("showSponsorship")}}">Buy</a>
                     </li>
 
                     {{--<li>--}}

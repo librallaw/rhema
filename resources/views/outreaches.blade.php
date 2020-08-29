@@ -72,8 +72,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6 text-right">
                     <ul class="breadcrumb">
-                        <li><a href="about.php#">Home</a></li>
-                        <li><a href="about.php#">Page</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="active">Outreaches</li>
                     </ul>
                 </div>
@@ -117,8 +116,8 @@
                                         <div class="overlay">
                                             <div class="view-list">
                                                 <h4>Blood Donate</h4>
-                                                <a href="assets/img/gallery/11.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                                <a href="index-4.html#"><i class="fa fa-link"></i></a>
+                                                <a href="assets/img/gallery/outreach1.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -129,8 +128,8 @@
                                         <div class="overlay">
                                             <div class="view-list">
                                                 <h4>Rebuild Home</h4>
-                                                <a href="assets/img/gallery/22.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                                <a href="index-4.html#"><i class="fa fa-link"></i></a>
+                                                <a href="assets/img/gallery/outreach2.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -141,8 +140,8 @@
                                         <div class="overlay">
                                             <div class="view-list">
                                                 <h4>Water Collect</h4>
-                                                <a href="assets/img/gallery/33.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                                <a href="index-4.html#"><i class="fa fa-link"></i></a>
+                                                <a href="assets/img/gallery/outreach3.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -153,8 +152,8 @@
                                         <div class="overlay">
                                             <div class="view-list">
                                                 <h4>Child Education</h4>
-                                                <a href="assets/img/gallery/44.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                                <a href="index-4.html#"><i class="fa fa-link"></i></a>
+                                                <a href="assets/img/gallery/outreach4.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -165,8 +164,8 @@
                                         <div class="overlay">
                                             <div class="view-list">
                                                 <h4>Help Poor</h4>
-                                                <a href="assets/img/gallery/55.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                                <a href="index-4.html#"><i class="fa fa-link"></i></a>
+                                                <a href="assets/img/gallery/outreach5.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -177,8 +176,8 @@
                                         <div class="overlay">
                                             <div class="view-list">
                                                 <h4>Homeless People</h4>
-                                                <a href="assets/img/gallery/66.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
-                                                <a href="index-4.html#"><i class="fa fa-link"></i></a>
+                                                <a href="assets/img/gallery/outreach6.jpg" class="item popup-link"><i class="fa fa-expand"></i></a>
+                                               
                                             </div>
                                         </div>
                                     </div>

@@ -114,16 +114,19 @@
         <div class="container">
             <div class="row">
                 <!-- Start Contact Form -->
+                @include("alert")
                 <div class="col-md-7 contact-form">
                     <div class="content">
                         <div class="heading">
                             <h3>Give us Feedbacks</h3>
                         </div>
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                        <form action="{{route("addContact")}}" method="POST" class="contact-form">
+
+                            @csrf
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" required type="text">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -131,7 +134,7 @@
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                        <input class="form-control" id="email" name="email" placeholder="Email*" required type="email">
                                         <span class="alert-error"></span>
                                     </div>
                                 </div>
@@ -147,13 +150,13 @@
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Your Experience *"></textarea>
+                                        <textarea class="form-control" id="comments" name="message"  required placeholder="Tell Us About Your Experience *"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="row">
-                                    <button type="submit" name="submit" id="submit">
+                                    <button type="submit" name="submit">
                                         Send Message <i class="fa fa-paper-plane"></i>
                                     </button>
                                 </div>

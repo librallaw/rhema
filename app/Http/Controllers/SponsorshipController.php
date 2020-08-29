@@ -9,6 +9,6 @@ class SponsorshipController extends Controller
     //
     public function showSponsorship()
     {
-        return view("sponsorship");
+        return view("v2.sponsor");
     }
 }

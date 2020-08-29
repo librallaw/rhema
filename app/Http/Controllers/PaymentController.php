@@ -30,7 +30,7 @@ namespace App\Http\Controllers;
         {
 
             $validatedData = $request->validate([
-                'amount' => 'required|integer',
+                'email' => 'required',
             ]);
 
             $curl = curl_init();
@@ -40,7 +40,7 @@ namespace App\Http\Controllers;
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_CUSTOMREQUEST => "POST",
                 CURLOPT_POSTFIELDS => json_encode([
-                    'amount'=> $request->post("amount") * 100,
+                    'amount'=> 10000,
                     'email'=>$request->post("email"),
                 ]),
 
@@ -82,14 +82,105 @@ namespace App\Http\Controllers;
 // perhaps due to network issue
 
             $new_payment = new Payment();
+            $new_payment->email =  $request->post("email");
+            $new_payment->reference = $tranx->data->reference;
+            $new_payment->unique_id = md5(time());
+            $new_payment->amount = 10000;
+            $new_payment->status = "pending";
+            $new_payment->product = "RD-jul-dec-20";
+            $new_payment->init_time = time();
+            $new_payment->date =  date('m-y',time());
+
+            $new_payment->save();
+
+            //save_last_transaction_reference($tranx->data->reference);
+
+// redirect to page so User can pay
+
+
+
+            // echo $tranx->data->authorization_url;exit;
+
+            return Redirect::away($tranx->data->authorization_url);
+
+
+            // return \Unicodeveloper\Paystack\Facades\Paystack::getAuthorizationUrl()->redirectNow();
+        }
+
+
+
+
+
+
+        public function redirectToGatewaySponsor(Request $request)
+        {
+
+            $validatedData = $request->validate([
+                'email' => 'required',
+            ]);
+
+            $curl = curl_init();
+
+            curl_setopt_array($curl, array(
+                CURLOPT_URL => "https://api.paystack.co/transaction/initialize",
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_CUSTOMREQUEST => "POST",
+                CURLOPT_POSTFIELDS => json_encode([
+                    'amount'=> 10000,
+                    'email'=>$request->post("email"),
+                ]),
+
+                CURLOPT_HTTPHEADER => [
+                    "authorization: Bearer sk_test_858bc6de2e4a4e4b138356234bcc15ac99a373d0",
+                    "content-type: application/json",
+                    "cache-control: no-cache"
+                ],
+            ));
+
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+
+
+
+            if($err){
+                // there was an error contacting the Paystack API
+                /*  return Redirect::route("loadPayment",['id'=>$request->post('movie_id'),'slug'=>$deta->slug])->with('message',"An error occurred while trying to process your transaction, Please try again Later")->with('type','danger')->with('reference','danger');*/
+
+                die('Curl returned error: ' . $err);
+            }
+
+
+
+            $tranx = json_decode($response);
+
+            // dd($tranx);
+
+            if(!$tranx->status){
+                // there was an error from the API
+                /*  return Redirect::route("loadPayment",['id'=>$request->post('movie_id'),'slug'=>$deta->slug])->with('message',$tranx->message)->with('type','danger')->with('reference','danger');*/
+
+
+                die("error from API");
+
+            }
+
+// store transaction reference so we can query in case user never comes back
+// perhaps due to network issue
+
+            $new_payment = new Payment();
             $new_payment->name =  $request->post("name");
             $new_payment->email =  $request->post("email");
             $new_payment->phone =  $request->post("phone");
+            $new_payment->phone =  $request->post("address");
+            $new_payment->phone =  $request->post("country");
+            $new_payment->phone =  $request->post("state");
+            $new_payment->phone =  $request->post("city");
             $new_payment->reference = $tranx->data->reference;
             $new_payment->unique_id = md5(time());
-            $new_payment->amount = $request->post("amount") * 100;
+            $new_payment->amount = 10000;
             $new_payment->status = "pending";
-            $new_payment->product = "RD";
+            $new_payment->product = "SP";
+
             $new_payment->init_time = time();
             $new_payment->date =  date('m-y',time());
 
@@ -135,7 +226,7 @@ namespace App\Http\Controllers;
             $route = "showSponsorship";
            // dd("I got here");
 
-            if(count($reference2) < 1){
+            if(empty($reference2)){
              return Redirect::route($route)->with("message",'Invalid transaction')->with("type",'danger');
                // exit;
 
@@ -235,7 +326,11 @@ namespace App\Http\Controllers;
                 //check if transaction returned a true
                 if($paymentDetails->data->status =="success" && $paymentDetails->status ==true){
 
+
+
                     return Redirect::route("showSponsorship")->with("message","Your Payment was Successfully")->with("type",'success');
+
+
                 }
 
 
