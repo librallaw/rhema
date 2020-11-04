@@ -98,7 +98,7 @@
                         </div>
                         <br >
                         <br >
-                        <a href="#" class="btn btn-success">Download Now </a>
+                        <a href="{{route('download')}}" class="btn btn-success">Download Now </a>
                     </div>
                     <div class="col-lg-6">
                         <div class="divider-60 divider-lg-0"></div>
@@ -149,39 +149,19 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="owl-carousel owl-nav-bottom" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="1" data-responsive-xs="1" data-nav="true" data-margin="60" data-loop="true" data-autoplay="true">
+                            @foreach($testimonials as $testimonial)
                             <div class="vertical-item quote-item">
                                 <div class="item-content text-center">
                                     <h4 class="mb-3">
-                                        Claudia T. Taylor
+                                        {{$testimonial->name}}
                                     </h4>
-                                    <p class="position">United States</p>
+                                    <p class="position">{{$testimonial->country}}</p>
                                     <p>
-                                        After treatment my prognosis was so amazing I didn't need to take any tablets. Although the treatment was very aggressive, not once was I sick except for hair loss. I am healed completely. I have had four tests, and still no trace of cancer. I am not in remission, I am healed by the blood of Jesus Christ, and I am eternally grateful to the Father God. Jesus is and will always be Lord of my life.
+                                        {{$testimonial->testimony}}
                                     </p>
                                 </div>
                             </div>
-                            <div class="vertical-item quote-item">
-                                <div class="item-content text-center">
-                                    <h4 class="mb-3">
-                                        Maxie R. Broussard
-                                    </h4>
-                                    <p class="position">Kenya</p>
-                                    <p>
-                                        The day I gave my life to Christ was March 21, 2004. I wish I could say I never drank again, but I did. The last time I had a drink was June 6, 2004. Since then the Lord has taken away from me the taste for alcohol. I've never been happier. Now I believe the Lord is taking away my nicotine addiction. It has been three days. I want everyone to pray for me because I know God answers prayer.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="vertical-item quote-item">
-                                <div class="item-content text-center">
-                                    <h4 class="mb-3">
-                                        Sarah J. Adams
-                                    </h4>
-                                    <p class="position">Nigeria</p>
-                                    <p>
-                                        Now I'm doing a lot better and I'm no longer suicidal. I trust people more and the Lord has changed me so much! Thanks to Jesus, I no longer want to die! If it wasn't for him I do not think I would have made it. That's not all he's done though; He has saved me so I could have everlasting life!
-                                        .</p>
-                                </div>
-                            </div>
+                            @endforeach
 
                         </div>
                     </div>

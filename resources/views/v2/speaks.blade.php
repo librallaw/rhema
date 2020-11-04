@@ -119,16 +119,16 @@
 
         <!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
         @include("v2.header")
-
+        @foreach($speaks as $speak)
         <section class="page_title ds s-parallax s-py-110">
             <div class="container">
                 <div class="row">
 
                     <div class="col-md-12 text-center">
-                        <h1 class="small-title">Rhema Speaks</h1>
+                        <h1 class="small-title">{{$speak->title}}</h1>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a> THE ADVENTURES OF RHEMA IS COMING TO A CITY NEAR YOU, GET READY TO BE PART OF IT. BLESSINGS</a>
+                                <a> {{$speak->subtitle}}</a>
                             </li>
 
                         </ol>
@@ -147,7 +147,7 @@
                             <div class="col-lg-6 col-xl-5">
                                 <div class="vertical-item hero-bg text-center team-layout content-padding">
                                     <div class="item-media">
-                                        <img src="images/front4.png" alt="img">
+                                        <img src="/images/file/{{$speak->image}}" alt="img">
                                     </div>
 
                                 </div>
@@ -157,19 +157,11 @@
                                 <div class="divider-lg-70 divider-60"></div>
 
                                 <p class="excerpt">
-                                    The adventures of Rhema for Living; for as the Word of God journeys from one nation to another through the person of our Father, Apostle (Prof.) Johnson Suleman, from one people to another with lives being changed all over the world, the resulting testimonies are proof of the miracle working abilities contained in the devotional, Rhema for Living.
-                                    <br />
-                                    <br />
-                                    We also, elucidate the victories of faith and testimonies of our dedicated partners from all around the world on the impact, reach and transformation of lives from our devotional.
+                                    {!! nl2br($speak->body) !!}
 
                                 </p>
 
-
-
-
-
                                 <div class="divider-40"></div>
-
 
                             </div>
                         </div>
@@ -177,45 +169,26 @@
                 </div>
             </div>
         </section>
+        @endforeach
 
         <section id="quotes" class="ds section-testimonials s-py-90 s-py-xl-150">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="owl-carousel owl-nav-bottom" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="1" data-responsive-xs="1" data-nav="true" data-margin="60" data-loop="true" data-autoplay="true">
-                            <div class="vertical-item quote-item">
-                                <div class="item-content text-center">
-                                    <h4 class="mb-3">
-                                        Claudia T. Taylor
-                                    </h4>
-                                    <p class="position">United States</p>
-                                    <p>
-                                        After treatment my prognosis was so amazing I didn't need to take any tablets. Although the treatment was very aggressive, not once was I sick except for hair loss. I am healed completely. I have had four tests, and still no trace of cancer. I am not in remission, I am healed by the blood of Jesus Christ, and I am eternally grateful to the Father God. Jesus is and will always be Lord of my life.
-                                    </p>
+                            @foreach($testimonials as $testimonial)
+                                <div class="vertical-item quote-item">
+                                    <div class="item-content text-center">
+                                        <h4 class="mb-3">
+                                            {{$testimonial->name}}
+                                        </h4>
+                                        <p class="position">{{$testimonial->country}}</p>
+                                        <p>
+                                            {{$testimonial->testimony}}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="vertical-item quote-item">
-                                <div class="item-content text-center">
-                                    <h4 class="mb-3">
-                                        Maxie R. Broussard
-                                    </h4>
-                                    <p class="position">Kenya</p>
-                                    <p>
-                                        The day I gave my life to Christ was March 21, 2004. I wish I could say I never drank again, but I did. The last time I had a drink was June 6, 2004. Since then the Lord has taken away from me the taste for alcohol. I've never been happier. Now I believe the Lord is taking away my nicotine addiction. It has been three days. I want everyone to pray for me because I know God answers prayer.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="vertical-item quote-item">
-                                <div class="item-content text-center">
-                                    <h4 class="mb-3">
-                                        Sarah J. Adams
-                                    </h4>
-                                    <p class="position">Nigeria</p>
-                                    <p>
-                                        Now I'm doing a lot better and I'm no longer suicidal. I trust people more and the Lord has changed me so much! Thanks to Jesus, I no longer want to die! If it wasn't for him I do not think I would have made it. That's not all he's done though; He has saved me so I could have everlasting life!
-                                        .</p>
-                                </div>
-                            </div>
+                            @endforeach
 
                         </div>
                     </div>

@@ -184,19 +184,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
+                        @foreach($authors as $author)
                         <div class="divider-xl-200"></div>
                         <p class="mb-2 color-dark">Meet Authors</p>
                         <h2 class="special-heading">
-                            <span>Apostle (Prof.) Johnson & Dr. Lizzy Suleman</span>
+                            <span>{{$author->name}}</span>
                         </h2>
                         <div class="divider-40"></div>
                         <p class="excerpt">
-                            Apostle (Prof.) Johnson Suleman is the President of Omega Fire Ministries, a ministry called to produce a people of fire. He has a mandate to, ”Wipe out tears, restore people to their original destiny through the revelation of the Word, the manifestation of power and the reality of Spirit”
-                            <br /> <br />
-                            He is also, the CEO of Celebration Television, a Christian satellite station that reaches over two (2) billion people in over a hundred (100) nations daily.
-                            He, alongside his lovely wife, Dr. Lizzy Suleman are the senior Pastors of Omega Fire Ministries and jointly oversee its affairs, which is reputed for its exponential growth and formidable presence in over fifty(50) nations of the world. <br /> <br />
-                            His ministrations are characterized with accurate prophetic utterances, the special miraculous and a profound depth of God’s Word. <br /> <br />
-                            Apostle(Prof.) Johnson Suleman ministers in crusades, all around the world because  he is under a divine mandate to reach five(5) billion souls with the gospel, and Rhema for Living devotional is one of the major tools of his outreach programs.
+                            {!! nl2br($author->body) !!}
 
                         </p>
                         <div class="divider-40"></div>
@@ -204,6 +200,7 @@
                         <div class="divider-40"></div>
 
                         <div class="divider-xl-150"></div>
+                            @endforeach
                     </div>
                 </div>
             </div>

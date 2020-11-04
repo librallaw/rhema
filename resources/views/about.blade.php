@@ -141,9 +141,6 @@
                         <p>
                             Rhema for Living devotional is an excellent tool of evangelism, for it helps to break communication barriers and bring help the way of people. As a church, fellowship group in personal outreach campaigns, it is an arsenal of Spiritual nuggets,
 
-
-
-
                         </p>
                     </div>
                 </div>
