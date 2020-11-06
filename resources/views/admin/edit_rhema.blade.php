@@ -5,10 +5,7 @@
 @include("admin.includes.header");
 
 <body class="fix-sidebar">
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="cssload-speeding-wheel"></div>
-    </div>
+
     @include("admin.includes.nav");
 
     <div id="page-wrapper">
@@ -48,7 +45,7 @@
                                             <label for="exampleInputTitle">Body</label>
                                             <div class="input-group">
                                                 <div class="input-group-addon"><i class="ti-text"></i></div>
-                                                <textarea cols="16" rows="4" class="form-control" id="exampleInputTitle1" name="body">{{$rhema->body}}</textarea>
+                                                <textarea cols="16" rows="4" class="ckeditor form-control" id="exampleInputTitle1" name="body">{{$rhema->body}}</textarea>
                                             </div>
                                         </div>
 

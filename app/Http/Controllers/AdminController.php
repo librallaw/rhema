@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\AboutRhema;
 use App\Author;
 use App\Banner;
+use App\Payment;
 use App\Reason;
 use App\RhemaSpeak;
 use App\Testimonial;
@@ -423,5 +424,10 @@ class AdminController extends Controller
         $banner = RhemaSpeak::where('id', $id);
         $banner->delete();
         return back()->with('success', 'Successfully deleted');
+    }
+
+    public function viewPayment(){
+        $data['payments'] = Payment::all();
+        return view('admin.list_payment', $data);
     }
 }

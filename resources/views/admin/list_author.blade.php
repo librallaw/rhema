@@ -12,7 +12,7 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">View Banner</h4>
+                        <h4 class="page-title">View Author</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
@@ -29,7 +29,6 @@
 
                         <div class="white-box">
                             <h3 class="box-title m-b-0">Author</h3>
-                            <p class="text-muted m-b-30">All Author</p>
                             <div class="table-responsive">
                                 <table id="myTable" class="table table-striped">
                                     <thead>
@@ -46,8 +45,8 @@
                                         <tr>
                                             <td>{{$x++}}</td>
                                             <td>{{$author->name}}</td>
-                                            <td>{{\Illuminate\Support\Str::limit($author->body, 350, '........')}}</td>
-                                            <td><a href="{{url('/editAuthor/'.$author->id)}}"><span class="label label-rouded label-warning"> Edit</span></a> || <a href="{{ route('deleteAuthor', ['id' => $author->id]) }}"> <span class="label label-rounded label-danger">Delete</span></a></td>
+                                            <td>{!!\Illuminate\Support\Str::limit($author->body, 350, '........')  !!}</td>
+                                            <td><a href="{{url('/editAuthor/'.$author->id)}}"><span class="label label-rouded label-warning"> Edit</span></a></td>
                                             <td></td>
                                         </tr>
                                         @endforeach

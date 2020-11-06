@@ -28,8 +28,12 @@
 <script src="{{asset('/admin/plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js')}}"></script>
 <script src="{{asset('/admin/plugins/bower_components/custom-select/custom-select.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('/admin/plugins/bower_components/bootstrap-select/bootstrap-select.min.js')}}" type="text/javascript"></script>
-
-
+<script src="/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+</script>
 <script>
     // Date Picker
     jQuery('.mydatepicker, #datepicker').datepicker();

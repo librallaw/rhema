@@ -7,9 +7,7 @@
 
 <body class="fix-sidebar">
     <!-- Preloader -->
-    <div class="preloader">
-        <div class="cssload-speeding-wheel"></div>
-    </div>
+
     @include("admin.includes.nav");
 
     <div id="page-wrapper">
@@ -49,7 +47,7 @@
                                             <label for="exampleInputTitle">Body</label>
                                             <div class="input-group">
                                                 <div class="input-group-addon"><i class="ti-text"></i></div>
-                                                <textarea cols="20" rows="4" placeholder="Body" name="body" class="form-control"></textarea>
+                                                <textarea cols="20" rows="4" placeholder="Body" name="body" class="ckeditor form-control"></textarea>
                                             </div>
                                         </div>
 

@@ -6,10 +6,7 @@
 @include("admin.includes.header");
 
 <body class="fix-sidebar">
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="cssload-speeding-wheel"></div>
-    </div>
+
     @include("admin.includes.nav");
 
     <div id="page-wrapper">

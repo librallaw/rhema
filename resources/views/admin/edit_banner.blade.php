@@ -7,9 +7,7 @@
 
 <body class="fix-sidebar">
     <!-- Preloader -->
-    <div class="preloader">
-        <div class="cssload-speeding-wheel"></div>
-    </div>
+
     @include("admin.includes.nav");
 
     <div id="page-wrapper">
@@ -19,7 +17,6 @@
                         <h4 class="page-title">Banner</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <a href="http://wrappixel.com/templates/pixeladmin/" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Buy Now</a>
                         <ol class="breadcrumb">
                             <li><a href="#">Dashboard</a></li>
                             <li class="active">Edit Banner</li>
@@ -50,7 +47,7 @@
                                             <label for="exampleInputTitle">Body</label>
                                             <div class="input-group">
                                                 <div class="input-group-addon"><i class="ti-text"></i></div>
-                                                <textarea cols="16" rows="4" class="form-control" id="exampleInputTitle1" name="body">{{$banner->body}}</textarea>
+                                                <textarea cols="16" rows="4" class="ckeditor form-control" id="exampleInputTitle1" name="body">{{$banner->body}}</textarea>
                                             </div>
                                         </div>
 

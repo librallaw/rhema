@@ -222,7 +222,7 @@
                         </h2>
                         <div class="divider-40"></div>
                         <p class="excerpt">
-                            {{\Illuminate\Support\Str::limit($author->body, 350, '........')}}
+                            {!! \Illuminate\Support\Str::limit($author->body, 350, '........') !!}
 
                         </p>
                         <div class="divider-40"></div>
@@ -256,7 +256,7 @@
                         </h3>
                         <div class="divider-40"></div>
                         <p>
-                            {{\Illuminate\Support\Str::limit($rhema->body, 300, '........')}}
+                            {!! \Illuminate\Support\Str::limit($rhema->body, 300, '........') !!}
                         </p>
 
                         <a href="{{route('about')}}" class="btn btn-maincolor">Read More</a>

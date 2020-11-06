@@ -47,7 +47,7 @@
                                         <tr>
                                             <td>{{$x++}}</td>
                                             <td>{{$banner->title}}</td>
-                                            <td>{{$banner->body}}</td>
+                                            <td>{!! $banner->body !!}</td>
                                             <td><img src="/images/file/{{$banner->image}}" alt="banner" style="height: 50px; width: 50px;"/></td>
                                             <td><a href="{{url('editBanner/'.$banner->id)}}"><span class="label label-rouded label-warning"> Edit</span></a> || <a href="{{ route('deleteBanner', ['id' => $banner->id]) }}"> <span class="label label-rounded label-danger">Delete</span></a></td>
                                             <td></td>

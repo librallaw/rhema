@@ -47,7 +47,7 @@
                                         <tr>
                                             <td>{{$x++}}</td>
                                             <td>{{$rhema->title}}</td>
-                                            <td>{{\Illuminate\Support\Str::limit($rhema->body, 300, '........')}}</td>
+                                            <td>{!!\Illuminate\Support\Str::limit($rhema->body, 300, '........')  !!}</td>
                                             <td><img src="/images/file/{{$rhema->image}}" alt="banner" style="height: 50px; width: 50px;"/></td>
                                             <td><a href="{{url('editRhema/'.$rhema->id)}}"><span class="label label-rouded label-warning"> Edit</span></a> || <a href="{{ route('deleteRhema', ['id' => $rhema->id]) }}"> <span class="label label-rounded label-danger">Delete</span></a></td>
                                             <td></td>

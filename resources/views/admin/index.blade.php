@@ -14,11 +14,9 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Dashboard 1</h4>
+                        <h4 class="page-title">Dashboard</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <a href="http://wrappixel.com/templates/pixeladmin/" target="_blank" class="btn btn-danger pull-right m-l-20 btn-rounded btn-outline hidden-xs hidden-sm waves-effect waves-light">Buy Now</a>
-                        
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -29,34 +27,26 @@
                     <div class="col-md-12 col-sm-6">
                         <div class="row">
                             <!-- .col -->
-                            <div class="col-md-3 col-sm-12">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="white-box text-center bg-megna">
-                                    <h1 class="text-white counter">44</h1>
-                                    <p class="text-white">Products</p>
+                                    <h1 class="text-white counter">{{count($payments)}}</h1>
+                                    <p class="text-white">Payments</p>
                                 </div>
                             </div>
                             <!-- /.col -->
                             <!-- .col -->
-                            <div class="col-md-3 col-sm-12">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="white-box text-center bg-inverse">
-                                    <h1 class="text-white counter">44</h1>
-                                    <p class="text-white">Special Products</p>
+                                    <h1 class="text-white counter">{{count($tests)}}</h1>
+                                    <p class="text-white">Testimonials</p>
                                 </div>
                             </div>
                             <!-- /.col -->
                             <!-- .col -->
-                            <div class="col-md-3 col-sm-12">
+                            <div class="col-md-4 col-sm-12">
                                 <div class="white-box text-center bg-info">
-                                    <h1 class="counter text-white">44</h1>
-                                    <p class="text-white">Orders</p>
-                                </div>
-                            </div>
-                            <!-- /.col -->
-                            <!-- .col -->
-                            <div class="col-md-3 col-sm-12">
-                                <div class="white-box text-center bg-danger">
-                                    <h1 class="text-white counter">6555</h1>
-                                    <p class="text-white">FAQs</p>
+                                    <h1 class="counter text-white">{{count($contacts)}}</h1>
+                                    <p class="text-white">Contacts</p>
                                 </div>
                             </div>
                             <!-- /.col -->
@@ -131,91 +121,46 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="white-box">
-                            <h3 class="box-title">Recent Students</h3>
+                            <h3 class="box-title">Recent Payments</h3>
                             <div class="table-responsive">
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Students</th>
-                                            <th>Date Added</th>
-                                            <th>Courses Offered</th>
-                                            <th>Fees</th>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Product</th>
+                                            <th>Email</th>
+                                            <th>Initial Time</th>
+                                            <th>Complete Time</th>
+                                            <th>Amount</th>
+                                            <th>Transaction Date</th>
                                             <th class="text-center">Status</th>
-                                            <th class="text-center">Portal ID</th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($rPayments as $payment)
                                         <tr>
-                                            <td>Steve N. Horton</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 22, 2014</span></td>
-                                            <td>Tailoring</td>
-                                            <td>$45.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-success">Paid</div>
-                                            </td>
-                                            <td class="text-center">-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Charles S Boyle</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
-                                            <td>Programmimg</td>
-                                            <td>$245.30</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-info">Shipped</div>
-                                            </td>
-                                            <td class="text-center"><i class="fa fa-plane"></i> CGX0089734531</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Lucy Doe</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2014</span></td>
-                                            <td>Bead Making</td>
-                                            <td>$38.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-info">Shipped</div>
-                                            </td>
-                                            <td class="text-center"><i class="fa fa-plane"></i> CGX0089934571</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Teresa L. Doe</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 15, 2014</span></td>
-                                            <td>Tailoring, Bag Making</td>
-                                            <td>$77.99</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-info">Shipped</div>
-                                            </td>
-                                            <td class="text-center"><i class="fa fa-plane"></i> CGX0089734574</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Teresa L. Doe</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 12, 2014</span></td>
-                                            <td>Tailoring</td>
-                                            <td>$18.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-success">Paid</div>
-                                            </td>
-                                            <td class="text-center">-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Charles S Boyle</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 17, 2014</span></td>
-                                            <td>Tailoring</td>
-                                            <td>$658.00</td>
-                                            <td class="text-center">
-                                                <div class="label label-table label-danger">Refunded</div>
-                                            </td>
-                                            <td class="text-center">-</td>
-                                        </tr>
-                                        <tr>
+                                            <td>{{$payment->name}}</td>
+                                            <td>{{$payment->phone}}</td>
+                                            <td>{{$payment->product}}</td>
+                                            <td>{{$payment->email}}</td>
+                                            <td>{{date('d-m-Y', $payment->init_time)}}</td>
+                                            <td>{{date('d-m-Y', $payment->complete_time)}}</td>
+                                            <td>{{$payment->amount}}</td>
+                                            <td>{{$payment->transaction_date}}</td>
 
-                                            <td>Scott S. Calabrese</td>
-                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 19, 2014</span></td>
-                                            <td>Tailoring, Shoe Making</td>
-                                            <td>$45.58</td>
                                             <td class="text-center">
-                                                <div class="label label-table label-warning">Unpaid</div>
+                                                @if($payment->status == 'pending')
+                                                    <span class="label label-rouded label-warning">Pending</span>
+                                                @elseif($payment->status == 'success')
+                                                    <span class="label label-rouded label-success">Success</span>
+                                                @else
+                                                    <span class="label label-rouded label-primary">{{$payment->status}}</span>
+                                                @endif
                                             </td>
-                                            <td class="text-center">-</td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

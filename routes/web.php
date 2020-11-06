@@ -61,10 +61,7 @@
     Route::get('/logout', 'RegisterController@logout')->name('logout');
 
 Route::group(['middleware' => ['auth']], function () {
-
-    Route::get('/viewDashboard', function () {
-        return view('admin.index');
-    })->name('viewDashboard');
+    Route::get('/viewDashboard', 'DashboardController@home')->name('viewDashboard');
     ////banner
     Route::get('/view/UploadBanner', 'AdminController@viewUploadBanner')->name('viewUploadBanner');
     Route::post('/uploadBanner', 'AdminController@uploadBanner')->name('uploadBanner');
@@ -110,5 +107,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/editSpeak/{id}', 'AdminController@viewEditSpeak')->name('viewEditSpeak');
     Route::post('/edit/speak/{id}', 'AdminController@editSpeak')->name('editSpeak');
     Route::get('/delete/speak/{id}', 'AdminController@deleteSpeak')->name('deleteSpeak');
+    Route::get('/view/payments', 'AdminController@viewPayment')->name('viewPayment');
 
 });

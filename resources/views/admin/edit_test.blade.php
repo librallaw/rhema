@@ -52,7 +52,7 @@
                                             <label for="exampleInputTitle">Testimony</label>
                                             <div class="input-group">
                                                 <div class="input-group-addon"><i class="ti-text"></i></div>
-                                                <textarea cols="16" rows="4" class="form-control" id="exampleInputTitle1" name="testimony" >{{$test->testimony}}</textarea>
+                                                <textarea cols="16" rows="4" class="ckeditor form-control" id="exampleInputTitle1" name="testimony" >{{$test->testimony}}</textarea>
                                             </div>
                                         </div>
 
