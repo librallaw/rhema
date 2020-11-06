@@ -27,26 +27,32 @@
                     <div class="col-md-12 col-sm-6">
                         <div class="row">
                             <!-- .col -->
-                            <div class="col-md-4 col-sm-12">
-                                <div class="white-box text-center bg-megna">
-                                    <h1 class="text-white counter">{{count($payments)}}</h1>
-                                    <p class="text-white">Payments</p>
-                                </div>
-                            </div>
-                            <!-- /.col -->
-                            <!-- .col -->
-                            <div class="col-md-4 col-sm-12">
+                            <div class="col-md-3 col-sm-12">
                                 <div class="white-box text-center bg-inverse">
-                                    <h1 class="text-white counter">{{count($tests)}}</h1>
-                                    <p class="text-white">Testimonials</p>
+                                    <h1 class="text-white counter">{{count($payments)}}</h1>
+                                    <p class="text-white">Total Payments</p>
                                 </div>
                             </div>
                             <!-- /.col -->
                             <!-- .col -->
-                            <div class="col-md-4 col-sm-12">
-                                <div class="white-box text-center bg-info">
-                                    <h1 class="counter text-white">{{count($contacts)}}</h1>
-                                    <p class="text-white">Contacts</p>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="white-box text-center bg-success">
+                                    <h1 class="text-white counter">{{count($sPayments)}}</h1>
+                                    <p class="text-white">Successful Payments</p>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <!-- .col -->
+                            <div class="col-md-3 col-sm-12">
+                                <div class="white-box text-center bg-warning">
+                                    <h1 class="counter text-white">{{count($pPayments)}}</h1>
+                                    <p class="text-white">Pending Payments</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="white-box text-center bg-danger">
+                                    <h1 class="counter text-white">{{count($fPayments)}}</h1>
+                                    <p class="text-white">Failed Payments</p>
                                 </div>
                             </div>
                             <!-- /.col -->
@@ -156,7 +162,7 @@
                                                 @elseif($payment->status == 'success')
                                                     <span class="label label-rouded label-success">Success</span>
                                                 @else
-                                                    <span class="label label-rouded label-primary">{{$payment->status}}</span>
+                                                    <span class="label label-rouded label-danger">{{$payment->status}}</span>
                                                 @endif
                                             </td>
                                         </tr>

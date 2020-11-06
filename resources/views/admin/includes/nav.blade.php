@@ -58,7 +58,6 @@
                     <a href="#" class="waves-effect"><i data-icon="]" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Rhema<span class="fa arrow"></span></span></a>
                     <ul class="nav nav-second-level">
                         <li><a href="{{ url('/view/rhema') }}">All Rhema</a></li>
-                        <li><a href="{{ url('/view/uploadRhema') }}">Add Rhema</a></li>
                     </ul>
                 </li>
 

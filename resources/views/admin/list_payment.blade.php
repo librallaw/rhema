@@ -65,7 +65,7 @@
                                                     @elseif($payment->status == 'success')
                                                     <span class="label label-rouded label-success">Success</span>
                                                     @else
-                                                    <span class="label label-rouded label-primary">{{$payment->status}}</span>
+                                                    <span class="label label-rouded label-danger">{{$payment->status}}</span>
                                                     @endif
                                             </td>
                                             <td></td>
